@@ -4,7 +4,10 @@
   "description": "practice react with node",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "migrate:up": "npx sequelize-cli db:migrate",
+    "migrate:undo": "npx sequelize-cli db:migrate:undo",
+    "dev": "npx nodemon app"
   },
   "author": "Arpan",
   "license": "ISC",
@@ -14,6 +17,7 @@
     "joi": "^17.4.2",
     "morgan": "^1.10.0",
     "mysql2": "^2.3.0",
+    "pg": "^8.11.3",
     "sequelize": "^6.6.5"
   }
 }
